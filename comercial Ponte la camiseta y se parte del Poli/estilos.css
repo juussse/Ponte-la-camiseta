@@ -1,0 +1,208 @@
+*{
+	padding: 0;
+	margin: 0;
+	user-select: None;
+
+}
+
+body{
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+	background: black;
+}
+
+.video{
+	z-index: 10;
+	position: absolute;
+	bottom: -85%;
+	width:100vw;
+	height: 85%;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h3{
+	margin-right: 20%;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: .3em;
+
+}
+
+.integrantes{
+	z-index: 2;
+	position: absolute;
+	font-size: 2.1em;
+	bottom: -225%;
+	width:100vw;
+	height: 70%;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.paginaOf{
+	z-index: 2;
+	position: absolute;
+	bottom: -365%;
+	width:100vw;
+	height: 70%;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.paginaOf p{
+	font-size: 2em;
+}
+a{
+	transition: 200ms;
+	text-decoration: None;
+	color: #9D2450;
+}
+a:hover{
+	color: gray;
+}
+
+.imagen{
+	position: absolute;
+	z-index: 7;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.imagen img{
+	width: calc(23vw + 20vh);
+	z-index: 7;
+	opacity: 0;
+	transform: translateX(0px) translateY(0px);
+}
+
+.fondo img{
+	left: 0;
+	z-index: 0;
+	position: fixed;	
+	width: auto;
+  	height: 120%;
+	opacity: 0;
+	filter: blur(6px);
+	object-fit: contain;
+}
+
+.linea{
+	z-index: 4;
+	position: absolute;
+	width: 80vw;
+	margin-left: 10vw;
+	height: 1.5vw;
+	background: white;
+}
+
+.texto1{
+	position: absolute;
+	top: 50vh;
+	margin-top: -10vw;
+	width: 100vw;
+	height: 1.5vw;
+}
+.d{
+	opacity: 0;
+	font-size: 7em;
+	z-index: 4;
+	font-family: 'Anton', sans-serif;
+	color: white;
+}
+.u{
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+	margin-top: 8vw;
+	letter-spacing: .3em;
+	font-size: 2em;
+	opacity: 0;
+	font-family: 'Anton', sans-serif;
+	color: white;
+}
+
+@keyframes slide{
+	from{
+		transform: translateY(5vw);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0);
+		opacity: 10;	
+	}
+}
+@keyframes mantener{
+	from{
+		opacity: 10;
+	}
+	to{
+		opacity: 10;
+	}
+}
+@keyframes deslizar{
+	from{
+		width: 0;
+	}
+	to{
+		width: 80vw;
+
+	}
+}
+@keyframes aparecer1{
+	from{
+		width: auto;
+  		height: 130%;
+		opacity: 0;
+	}
+	to{
+		width: auto;
+  		height: 120%;
+		opacity: 10;
+
+	}
+}
+@keyframes aparecer2{
+	from{
+		width: calc(30vw + 22vh);
+		opacity: 0;
+	}
+	to{
+		width: calc(23vw + 20vh);
+		opacity: 10;
+	}
+}
+
+@keyframes aparecer{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 10;
+
+	}
+}
+
+footer{
+	color: white;
+	font-size: 1.3rem	;
+	z-index: 10;
+	position: absolute;
+	bottom: -400%;
+	width:100vw;
+	height: 6%;
+	background: #9D2450;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
